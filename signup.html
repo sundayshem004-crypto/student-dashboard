@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="login-container">
+        <div class="login-card">
+            <h1>Create Account</h1>
+            <p>Join us and start managing your staudies</p>
+
+            <button type="button" id="goole-signup" class="google-btn">
+                <img src="https://www.google.com/favicon.ico" alt="google">
+                Continue with Google
+            </button>
+
+            <div class="divider">
+                <span>OR SIGNUP WITH EMAIL</span>
+                <div id="notification"></div>
+            </div>
+            <form id="signup-form" novalidate>
+
+                <label for="fname">Full Name</label><br>
+                <input type="text" id="student-name" placeholder="enter your name" required><br><br>
+                <p id="name-message"></p>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="student-email" placeholder="enter your email" required><br><br>
+                <p id="email-message"></p>
+
+                <label for="password">password</label><br>
+                <input type="password" id="student-password" placeholder="enter password" required><br><br>
+
+                <label for="confirm-password">Confirm Password</label><br>
+                <input type="password" id="confirm-password" placeholder="confirm password" required><br>
+                <p id="password-message"></p>
+                <button>Create Account</button>
+                
+            </form>
+            <p class="login-link">
+                Already have an account?
+                <a href="index.html" >Login</a>
+            </p>
+
+        </div>
+
+    </main>
+
+    <!-- <script type="module" src="firebase.js"></script> -->
+    <!-- <script src="script.js" ></script> -->
+    <script src="signup..js" type="module"></script>
+</body>
+</html>
